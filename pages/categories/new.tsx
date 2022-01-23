@@ -1,7 +1,9 @@
+import { CreateCategoryForm } from "components/categories/CreateCategoryForm";
+
 function NewCategory() {
   return (
     <>
-      <p>Add category</p>
+      <CreateCategoryForm />
     </>
   );
 }

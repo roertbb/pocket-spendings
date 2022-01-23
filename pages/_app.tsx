@@ -10,10 +10,10 @@ function MyApp({ Component, pageProps }: ExtendedAppProps) {
   return (
     <>
       <Header>{Component.title || "Pocket Spendings"}</Header>
-      <Navigation />
       <main className="flex flex-col">
         <Component {...pageProps} />
       </main>
+      <Navigation />
     </>
   );
 }
