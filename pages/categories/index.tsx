@@ -3,6 +3,7 @@ import {
   MdDirectionsBus,
   MdMedicalServices,
   MdOutlineStickyNote2,
+  MdHome,
 } from "react-icons/md";
 import { AddButton, ListItem } from "@ui";
 
@@ -37,6 +38,13 @@ function Categories() {
           Icon={MdOutlineStickyNote2}
           color="purple"
           rightSlot={<p className="text-sm text-green-600">1000.45 zł</p>}
+        />
+        <ListItem
+          text="Home"
+          description="Some secondary text"
+          Icon={MdHome}
+          color="orange"
+          rightSlot={<p className="text-sm text-green-600">0.12 zł</p>}
         />
       </ul>
       <AddButton url="/categories/new" />
