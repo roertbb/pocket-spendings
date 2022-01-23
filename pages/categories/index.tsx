@@ -4,14 +4,11 @@ import {
   MdMedicalServices,
   MdOutlineStickyNote2,
 } from "react-icons/md";
-import { AddButton, Header, ListItem } from "@ui";
+import { AddButton, ListItem } from "@ui";
 
 function Categories() {
   return (
     <>
-      <Header rightAction={<AddButton url="/categories/new" />}>
-        Categories
-      </Header>
       <ul>
         <ListItem
           text="Food"
@@ -42,8 +39,11 @@ function Categories() {
           rightSlot={<p className="text-sm text-green-600">1000.45 zł</p>}
         />
       </ul>
+      <AddButton url="/categories/new" />
     </>
   );
 }
+
+Categories.title = "Categories";
 
 export default Categories;
