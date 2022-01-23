@@ -6,7 +6,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Navigation />
-      <Component {...pageProps} />
+      <main className="flex flex-col">
+        <Component {...pageProps} />
+      </main>
     </>
   );
 }
