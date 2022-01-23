@@ -20,8 +20,8 @@ export function NavigationIcon({ Icon, url }: NavigationIconProps) {
           <Icon
             className={cn(
               "w-10 h-10 p-2 transition-all rounded-2xl",
-              { "fill-gray-600": !active },
-              { "bg-blue-100 fill-blue-400": active }
+              !active && "fill-gray-600",
+              active && "bg-blue-100 fill-blue-400"
             )}
           />
         </a>

@@ -1,4 +1,4 @@
-import { FormField } from "@ui";
+import { Button, FormField } from "@ui";
 import { Form, Formik } from "formik";
 import { z } from "zod";
 import { toFormikValidationSchema } from "zod-formik-adapter";
@@ -24,7 +24,7 @@ export function CreateCategoryForm() {
           <Form>
             <FormField name="name" className="mb-4" />
             <FormField name="description" className="mb-4" />
-            <button type="submit">Submit</button>
+            <Button>Submit</Button>
           </Form>
         )}
       </Formik>
