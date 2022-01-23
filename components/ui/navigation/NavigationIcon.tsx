@@ -10,7 +10,8 @@ interface NavigationIconProps {
 
 export function NavigationIcon({ Icon, url }: NavigationIconProps) {
   const router = useRouter();
-  const active = router.pathname === url;
+  const active =
+    url === "/" ? url == router.pathname : router.pathname.startsWith(url);
 
   return (
     <li>

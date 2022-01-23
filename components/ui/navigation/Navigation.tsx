@@ -12,8 +12,8 @@ const navigationItems = [
 
 export function Navigation() {
   return (
-    <nav className="absolute bottom-0 w-screen border-t shadow-2xl border-gray-50">
-      <ul className="flex justify-around max-w-2xl p-4 m-auto">
+    <nav className="absolute bottom-0 w-screen border-t border-gray-100 shadow-2xl">
+      <ul className="flex justify-around max-w-2xl p-3 m-auto">
         {navigationItems.map(({ icon, url }) => (
           <Fragment key={url}>
             <NavigationIcon Icon={icon} url={url} />
