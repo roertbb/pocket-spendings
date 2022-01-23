@@ -1,5 +1,11 @@
 function NewCategory() {
-  return <p>NewCategory</p>;
+  return (
+    <>
+      <p>Add category</p>
+    </>
+  );
 }
+
+NewCategory.title = "Add category";
 
 export default NewCategory;
